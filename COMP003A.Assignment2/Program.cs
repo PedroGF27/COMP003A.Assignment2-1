@@ -36,6 +36,12 @@ namespace COMP003A.Assignment2
             isStudent = bool.Parse(Console.ReadLine());
 
             int futureAge = age + 5;
+            bool Adult = age >= 18;
+            double studentDiscount = price * .9;
+            double seniorDiscount = price * .8;
+
+
+
 
         }
     }
