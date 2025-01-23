@@ -25,12 +25,15 @@ namespace COMP003A.Assignment2
 
             Console.Write("What is your last name?: ");
             lastName = Console.ReadLine();
+
             Console.Write("How old are you?: ");
+            age = int.Parse(Console.ReadLine());
 
             Console.Write("What is the price of the item you're interested in?: ");
+            price = double.Parse(Console.ReadLine());
 
             Console.Write("Are you a student? (true/false)");
-
+            isStudent = bool.Parse(Console.ReadLine());
         }
     }
 }
