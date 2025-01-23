@@ -20,7 +20,7 @@ namespace COMP003A.Assignment2
             Console.Write("Welcome to the Discount Calculator!"); 
             
 
-            Console.Write("What is your first name?: "); // Asks user to add their first name
+            Console.Write("\nWhat is your first name?: "); // Asks user to add their first name
             firstName = Console.ReadLine();
 
             Console.Write("What is your last name?: "); // Asks user to add their last name
@@ -32,7 +32,7 @@ namespace COMP003A.Assignment2
             Console.Write("What is the price of the item you're interested in?: "); // Asks for price of product
             price = double.Parse(Console.ReadLine());
 
-            Console.Write("Are you a student? (true/false)"); // Whether you are a student or not
+            Console.Write("Are you a student? (true/false): "); // Whether you are a student or not
             isStudent = bool.Parse(Console.ReadLine());
 
             int futureAge = age + 5;
@@ -40,8 +40,12 @@ namespace COMP003A.Assignment2
             double studentDiscount = price * .9;
             double seniorDiscount = price * .8;
 
-
-
+            Console.WriteLine($"\nHello, {firstName} {lastName}!");
+            Console.WriteLine($"Your current age is {age}.");
+            Console.WriteLine($"In 5 years, you will be {futureAge}");
+            Console.WriteLine($"The original price of the item is ${price}");
+            Console.WriteLine($"As a Student, your discounted price is ${studentDiscount}");
+            Console.WriteLine($"As a Senior Citizen, your discounted price would be ${seniorDiscount}");
 
         }
     }
